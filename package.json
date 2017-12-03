@@ -1,12 +1,12 @@
 {
   "name": "vuejs-poster-shop",
   "version": "1.0.0",
-  "description": "Ultimate Vue.js Developers Course",
+  "description": "Ultimate Vue.js Developers Course Materials",
   "main": "index.js",
   "scripts": {
     "start": "nodemon ./index.js --ignore node_modules/ -e js,html,css"
   },
-  "author": "Anthony Gore <info@getjsdojo.com>",
+  "author": "Anthony Gore <info@getjsdojo.com>, Maya Novarini <iam@mayanovarini.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/vuejsdevelopers/vuejs-poster-shop"
