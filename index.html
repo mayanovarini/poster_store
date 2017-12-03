@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="referrer" content="never" />
     <title>Vue.js Poster Shop</title>
-    <link rel="icon" href="public/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="public/favicon.i co" type="image/x-icon">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
@@ -29,7 +29,10 @@
         <div class="cart">
             <h2>Shopping Cart</h2>
             <ul>
-                <li v-for="item in cart">{{ item.title }}</li>
+                <li v-for="item in cart">
+                    <div class="item-title">{{ item.title }}</div>
+                    <span class="item-qty">{{ item.qty }}</span>
+                </li>
             </ul>
             <div>
                 <div>
