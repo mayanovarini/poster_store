@@ -4,7 +4,7 @@
 
 #### Demo
 
-See the completed project here:  
+See the completed project here: //coming soon
 
 #### Pre-installation
 
