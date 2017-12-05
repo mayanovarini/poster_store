@@ -36,11 +36,15 @@
                     <button class="btn" v-on:click="dec(item)">-</button>
                 </li>
             </ul>
-            <div>
+            <div v-if="cart.length">
                 <div>
                   Total : {{ total | currency }}
                 </div>
             </div>
+            <div v-else class="empty-cart">
+                No items in the cart
+            </div>
+
         </div>
     </div>
 </div>
