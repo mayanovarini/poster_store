@@ -9,9 +9,13 @@ new Vue({
       { id: 2, title: 'Item 2' },
       { id:3, title: 'Item 3' },
   ],
-    cart: []
+    cart: [],
+    sarch: '',
   },
   methods: {
+    onSubmit: function(){
+      console.log(this.search) // just to know it works first
+    },
     addItem: function(index){
       this.total += PRICE;
       let item = this.items[index];
