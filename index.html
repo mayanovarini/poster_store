@@ -17,7 +17,11 @@
 <body>
 <div id="app">
     <div class="header">
-        <h1>Vue.js Poster Store Website! <span id="subtitle"> Built with Imgur API <a target="_blank" href="https://github.com/thegirlfromipanema/poster_store">(sourcecode)</a></span></h1>
+        <h1>Vue.js Poster Store Website!
+          <span id="subtitle"> Built with Imgur API
+            <a target="_blank" href="https://github.com/thegirlfromipanema/poster_store">(sourcecode)</a>
+          </span>
+        </h1>
 
         <form class="searchbar" v-on:submit.prevent="onSubmit">
           <input v-model="newSearch" placeholder="Search for posters">
@@ -45,7 +49,7 @@
 
             </div>
             <div id="product-list-bottom">
-              <div v-if="items.length === results.length && results.length > 0">No more item</div>
+              <div v-if="noMoreItems">No more item</div>
             </div>
         </div>
         <div class="cart">
