@@ -7,13 +7,20 @@ new Vue({
     total: 0,
     items: [],
     cart: [],
-    result: [],
+    results: [],
     newSearch: 'dogs',
     lastSearch: '',
     loading: false,
     price: PRICE,
   },
   methods: {
+    appendItems: function(){
+      console.log(this)
+      if (this.items.length < this.results.length) {
+        let append = this.results.slice(this.items.length, this.items.length + LOAD_NUM);
+        this.items = this.items.concat(append);
+      }
+    },
     onSubmit: function(){
       this.items = [];
       this.loading = true;
@@ -21,8 +28,8 @@ new Vue({
         .get('/search/'.concat(this.newSearch))
         .then(function(res) {
           this.lastSearch = this.newSearch;
-          this.results = this.date;
-          this.items = res.data.slice(0, LOAD_NUM);
+          this.results = res.data;
+          this.appendItems();
           this.loading = false;
       });
     },
@@ -70,12 +77,12 @@ new Vue({
   },
   mounted: function(){
      this.onSubmit();
+
+     let vueInstance = this;
+     let elem = document.getElementById("product-list-bottom");
+     let watcher = scrollMonitor.create(elem);
+     watcher.enterViewport(function(){
+       vueInstance.appendItems();
+     });
   }
-});
-
-let elem = document.getElementById("product-list-bottom")
-let watcher = scrollMonitor.create(elem);
-
-watcher.enterViewport(function(){
-  console.log("Entered viewport")
 });
