@@ -9,6 +9,7 @@ new Vue({
     newSearch: 'dogs',
     lastSearch: '',
     loading: false,
+    price: PRICE,
   },
   methods: {
     onSubmit: function(){
