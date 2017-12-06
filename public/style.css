@@ -70,6 +70,7 @@ body {
 
 .products {
     flex: 3;
+    margin-left: 1.5rem;
 }
 
 .cart {
@@ -95,14 +96,20 @@ h1 a {
   font-size: 1.5rem;
   color: #a7b1c1;
 }
+
 .searchbar {
     flex: 0 0 auto;
-    padding: 1rem 0;
-    border: 3px solid #4c7b92;
+    padding: 2rem 0;
     border-left: 0;
     border-right: 0;
     margin-bottom: 1rem;
     display: flex;
+    justify-content: center;
+    background-color: #d7d8af;
+}
+
+#searchbox {
+  width: 500px;
 }
 
 .searchbar > input {
@@ -110,7 +117,6 @@ h1 a {
     padding: 5px;
     font-size: 1rem;
     color: grey;
-    border: 1px solid #4c7b92;
 }
 
 .searchbar > input[type=submit] {
@@ -201,7 +207,7 @@ h1 a {
 
 #total-statement, .cart .empty-cart {
     padding-top: 1rem;
-    color: #b7ca50;
+    color: #95a24e;
 }
 
 .cart > h2 {
