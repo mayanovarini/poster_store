@@ -190,13 +190,18 @@ h1 a {
 
 /* Cart */
 
+#cart-statement {
+    font-size: 15px;
+}
+
 .cart {
     margin-left: 1rem;
     padding-left: 1rem;
 }
 
-.cart .empty-cart {
+#total-statement, .cart .empty-cart {
     padding-top: 1rem;
+    color: #b7ca50;
 }
 
 .cart > h2 {
@@ -206,7 +211,7 @@ h1 a {
 .cart ul {
     width: 100%;
     font-size: 0.9rem;
-    border-top: 2px solid black;
+    border-top: 2px solid #4c7b92;
     list-style: none;
     margin: 0;
     padding: 0;
