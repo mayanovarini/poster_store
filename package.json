@@ -2,14 +2,14 @@
   "name": "vuejs-poster-shop",
   "version": "1.0.0",
   "description": "Ultimate Vue.js Developers Course Materials",
-  "main": "index.js",
+  "main": "public/index.js",
   "scripts": {
-    "start": "nodemon ./index.js --ignore node_modules/ -e js,html,css"
+    "start": "nodemon index.js -e js,html,css"
   },
   "author": "Anthony Gore <info@getjsdojo.com>, Maya Novarini <iam@mayanovarini.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vuejsdevelopers/vuejs-poster-shop"
+    "url": "https://github.com/thegirlfromipanema/poster_store"
   },
   "license": "UNLICENSED",
   "dependencies": {
