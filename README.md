@@ -4,7 +4,7 @@
 
 #### Demo
 
-See the completed project here: //coming soon
+See the completed project here: https://postervue.herokuapp.com
 
 #### Pre-installation
 
